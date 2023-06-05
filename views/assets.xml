@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="assets_backend" name="l10n_co_pos_uvt_assets" inherit_id="point_of_sale.assets">
+    <template id="assets_backend" name="l10n_co_pos_uvt_assets" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
             <script type="text/javascript" src="/l10n_co_pos_uvt/static/src/js/l10n_co_pos_uvt.js"></script>
         </xpath>
