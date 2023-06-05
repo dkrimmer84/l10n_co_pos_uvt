@@ -23,8 +23,8 @@
                     // Validate if total order is greater than uvt_value and electronic invoice is not active
                     if(orderTotal > uvt_value && !order.is_to_electronic_invoice()) {
                         self.gui.show_popup('error', { // Show error popup
-                            'title': _t('Factura Error'),
-                            'body': _t('Facturas con un valor superior a $212.060 deben ser registradas electrónicamente.'),
+                            'title': _t('Factura Error por UVT'),
+                            'body': _t('Facturas con un valor superior a $' + uvt_value.toLocaleString() + ' deben ser registradas electrónicamente.'),
                         });
                         return;
                     }
